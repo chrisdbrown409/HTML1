@@ -6,14 +6,9 @@
 	<meta name="viewport" 		content="width=device-width, initial-scale=1.0">
 	<meta name="description" 	content="Chris Brown | Quality Assurance"> <!---Web Searches--->
 	<Title>Chris Brown | SQL</Title>
-	/*https://codepen.io/shaikmaqsood/pen/XmydxJ8/
-	/*html start*/
-	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	/*Java-start*/
 
-/*Java-end*/
-	
+
+
 <style>
 .collapsible {
  	background-color: #ab3629;
@@ -158,46 +153,6 @@ body, html {
   	font-style:normal;
 	font-family: times,serif;
  }
-	
-/*copy test begin*/
-	function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
-}	
-/*CSS-start*/	
-p
-{
-  color:#000000;
-  font-size:20px;
-}
-
-.textarea a
-{
-  height:30px;
-  width:300px;
-}
-
-copybutton
-{
-  height:30px;
-  width:150px;
-  border-radius:8px;
-  padding:10px;
-  font-size:20px;
-  font-family: 'Oswald', sans-serif;
-  height:52px;
-  cursor:pointer;
-  background-color:wheat;
-}
-/*CSS-end*/		
-
-	
-
-	
-	
   </style>
 </head>
 
@@ -307,25 +262,33 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
-<div>
-<!---copy code-->
-<p style="color:wheat;font-size:30px;text-align:center;">How to copy a TEXT to Clipboard on a Button-Click</p>
+<d>
+<input id="input" type="text" />
+<button id="execCopy"> execCopy </button>
+<button id="clipboardCopy"> clipboardCopy </button>
 
-<center>
-<p id="p1">Hello, I'm TEXT 1</p>
-<p id="p2">Hi, I'm the 2nd TEXT</p><br/>
+<script>	
+// Type 1
+document.getElementById('execCopy').addEventListener('click', execCopy);
+function execCopy() {
+  document.querySelector("#input").select();
+  document.execCommand("copy");
+}
 
-<copybutton onclick="copyToClipboard('#p1')">Copy TEXT 1</copybutton>
-<copybutton onclick="copyToClipboard('#p2')">Copy TEXT 2</copybutton>
-  
-<br/><br/><input class="text" type="text" id="" placeholder="Dont belive me?..TEST it here..;)" />
-</center>
-</div>  
+// Type 2
+document.getElementById('clipboardCopy').addEventListener('click', clipboardCopy);
+async function clipboardCopy() {
+  let text = document.querySelector("#input").value;
+  await navigator.clipboard.writeText(text);
+}
+</script>
+</d>
+	
   
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.05<br />
+  		Version:1.01<br />
   		Last Update:06-26-2021<br />
 	<HR>
 </Footer>
