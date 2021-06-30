@@ -6,7 +6,8 @@
 	<meta name="viewport" 		content="width=device-width, initial-scale=1.0">
 	<meta name="description" 	content="Chris Brown | Quality Assurance"> <!---Web Searches--->
 	<Title>Chris Brown | SQL</Title>
-
+	/*https://codepen.io/shaikmaqsood/pen/XmydxJ8/
+	
 	
 <style>
 .collapsible {
@@ -152,6 +153,51 @@ body, html {
   	font-style:normal;
 	font-family: times,serif;
  }
+	
+/*copy test begin*/
+/*Java-start*/
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+/*Java-end*/	
+/*CSS-start*/	
+p
+{
+  color:#000000;
+  font-size:20px;
+}
+
+.textBox
+{
+  height:30px;
+  width:300px;
+}
+
+button
+{
+  height:30px;
+  width:150px;
+  border-radius:8px;
+  padding:10px;
+  font-size:20px;
+  font-family: 'Oswald', sans-serif;
+  height:52px;
+  cursor:pointer;
+  background-color:wheat;
+}
+/*CSS-end*/		
+/*html start*/
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+
+	
+	
   </style>
 </head>
 
@@ -261,12 +307,25 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
+
+<!---copy code-->
+<p style="color:wheat;font-size:55px;text-align:center;">How to copy a TEXT to Clipboard on a Button-Click</p>
+
+<center>
+<p id="p1">Hello, I'm TEXT 1</p>
+<p id="p2">Hi, I'm the 2nd TEXT</p><br/>
+
+<button onclick="copyToClipboard('#p1')">Copy TEXT 1</button>
+<button onclick="copyToClipboard('#p2')">Copy TEXT 2</button>
+  
+<br/><br/><input class="textBox" type="text" id="" placeholder="Dont belive me?..TEST it here..;)" />
+</center>
   
   
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.00<br />
+  		Version:1.01<br />
   		Last Update:06-26-2021<br />
 	<HR>
 </Footer>
