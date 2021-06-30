@@ -7,7 +7,12 @@
 	<meta name="description" 	content="Chris Brown | Quality Assurance"> <!---Web Searches--->
 	<Title>Chris Brown | SQL</Title>
 	/*https://codepen.io/shaikmaqsood/pen/XmydxJ8/
-	
+	/*html start*/
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	/*Java-start*/
+
+/*Java-end*/
 	
 <style>
 .collapsible {
@@ -155,15 +160,13 @@ body, html {
  }
 	
 /*copy test begin*/
-/*Java-start*/
-function copyToClipboard(element) {
+	function copyToClipboard(element) {
   var $temp = $("<input>");
   $("body").append($temp);
   $temp.val($(element).text()).select();
   document.execCommand("copy");
   $temp.remove();
-}
-/*Java-end*/	
+}	
 /*CSS-start*/	
 p
 {
@@ -171,7 +174,7 @@ p
   font-size:20px;
 }
 
-.textBox
+.textarea a
 {
   height:30px;
   width:300px;
@@ -190,10 +193,7 @@ copybutton
   background-color:wheat;
 }
 /*CSS-end*/		
-/*html start*/
-<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	
 
 	
@@ -309,7 +309,7 @@ for (i = 0; i < coll.length; i++) {
 
 <div>
 <!---copy code-->
-<p style="color:wheat;font-size:55px;text-align:center;">How to copy a TEXT to Clipboard on a Button-Click</p>
+<p style="color:wheat;font-size:30px;text-align:center;">How to copy a TEXT to Clipboard on a Button-Click</p>
 
 <center>
 <p id="p1">Hello, I'm TEXT 1</p>
@@ -318,14 +318,17 @@ for (i = 0; i < coll.length; i++) {
 <copybutton onclick="copyToClipboard('#p1')">Copy TEXT 1</copybutton>
 <copybutton onclick="copyToClipboard('#p2')">Copy TEXT 2</copybutton>
   
-<br/><br/><input class="textBox" type="text" id="" placeholder="Dont belive me?..TEST it here..;)" />
+<br/><br/><input class="textarea" type="textarea a" id="" placeholder="Dont belive me?..TEST it here..;)" />
 </center>
+
+
+	
 </div>  
   
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.03<br />
+  		Version:1.05<br />
   		Last Update:06-26-2021<br />
 	<HR>
 </Footer>
