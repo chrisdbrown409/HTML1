@@ -391,7 +391,7 @@ body, html {
 		    <p><em>The following contents can be copied and can be pasted</em><p>
             </div>
             <div class="modal-body">
-		<textarea id="Textarea3" name="Textarea3" rows="6" cols="75">
+		<textarea id="Textarea3" name="Textarea3" type="text" rows="6" cols="75">
 At w3schools.com you will learn how to make a website. 
 They offer free tutorials in all web development technologies.
   		</textarea>
@@ -401,11 +401,14 @@ They offer free tutorials in all web development technologies.
 		    <button id="copy">Copy</button>
 		    </div>
 		
+		<!---<input id="input" type="text" /> --->
+		<!---<button id="clipboardCopy"> clipboardCopy </button>--->
+		
 		<script>	
 		// Type 2
 		document.getElementById('Copy').addEventListener('click', Copy);
 		async function Copy() {
-	  	let textarea3 = document.querySelector("#Textarea3").value;
+	  	let text= document.querySelector("#Textarea3").value;
 	  	await navigator.clipboard.writeText(text);
 		}
 		</script>
