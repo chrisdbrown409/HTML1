@@ -362,6 +362,16 @@ Select * from table_name
                 <!---<h3 style="font-size:14pt;">Button 1 Footer</h3>--->
 		    <!--- 15+ changed to below <button id="copy">Copy</button>--->
 		    <button id="clipboardCopy1"> Copy </button>
+		
+		<script>	
+		// Type 2
+		document.getElementById('clipboardCopy2').addEventListener('click', clipboardCopy1);
+		async function clipboardCopy1() {
+  		let text = document.querySelector("#Textarea1").value;
+  		await navigator.clipboard.writeText(text);
+		}
+		</script> <!---moved in 19.c--->
+		
             </div>
         </div>
     </div>
@@ -386,7 +396,7 @@ Select * from table_name where variable_A
 		    <!--- 15+ changed to below <button id="copy">Copy</button>--->
 		    <button id="clipboardCopy2"> Copy </button>
            
-		   		<script>	
+		<script>	
 		// Type 2
 		document.getElementById('clipboardCopy2').addEventListener('click', clipboardCopy2);
 		async function clipboardCopy2() {
@@ -396,7 +406,7 @@ Select * from table_name where variable_A
 		</script>
     </div>
 </div> <!--- 15.1 + moved from under button--->	
-</div> 	<!--- 1.19 b  + moved from under button--->	   
+</div> 	<!--- 1.19 b  + moved from under button had to add this after added the button--->	   
 		   
 		   
 		   
@@ -502,7 +512,7 @@ for (i = 0; i < coll.length; i++) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.19 b (restore 1.18)<br />
+  		Version:1.19 c (restore 1.18)<br />
   		Last Update:06-26-2021<br />
 	<HR>
 </Footer>
