@@ -160,14 +160,14 @@ body, html {
             display: none; /* Hidden by default */
             position: fixed; /* Stay in place */
             z-index: 1; /* Sit on top */
-            padding-top: 80px; /* Location of the box */
+            padding-top: 17%; /* Location of the box */
             left: 0;
             top: 0;
             width: 100%; /* Full width */
             height: 100%; /* Full height */
             overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0); /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+            /*background-color: rgb(0, 0, 0); /* Fallback color */
+            /*background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
             overflow: auto;
         }
 
@@ -191,7 +191,7 @@ body, html {
         /* Add Animation */
         @-webkit-keyframes animatetop {
             from {
-                top: -50%;
+                top: -60%;
                 opacity: 0
             }
 
@@ -203,7 +203,7 @@ body, html {
 
         @keyframes animatetop {
             from {
-                top: -50%;
+                top: -60%;
                 opacity: 0
             }
 
@@ -331,17 +331,17 @@ body, html {
 		<br />
 		<b>Queries</b><br />
 		<br />
-		Query 1: <button id="myBtn">Open Query 1</button></b><br /> 
+		Query 1: <button id="myBtn1">Open Query 1</button></b><br /> 
 		<br />
-   		Query 2: <button id="myBtn1">Open Query 2</button></b><br /> 
+   		Query 2: <button id="myBtn2">Open Query 2</button></b><br /> 
 		<br /> 
 		<br /> 
 		<b>Scripts</b><br /> 
 		<br />
-    		Script 1: <button id="myBtn2">Open Script 1</button></b><br />  	
+    		Script 1: <button id="myBtn3">Open Script 1</button></b><br />  	
     
 <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <div id="myModal1" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
@@ -354,13 +354,14 @@ body, html {
             </div>
             <div class="modal-footer">
                 <h3 style="font-size:14pt;">Button 1 Footer</h3>
+		    <button id="copy">Copy</button>
             </div>
         </div>
 
     </div>
 
     <!-- The Modal -->
-    <div id="myModal1" class="modal">
+    <div id="myModal2" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
@@ -379,7 +380,7 @@ body, html {
     </div>
 
     <!-- The Modal -->
-    <div id="myModal2" class="modal">
+    <div id="myModal3" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
@@ -399,9 +400,9 @@ body, html {
 
     <script>
         var datamap = new Map([
-            [document.getElementById("myBtn"), document.getElementById("myModal")],
             [document.getElementById("myBtn1"), document.getElementById("myModal1")],
-            [document.getElementById("myBtn2"), document.getElementById("myModal2")]
+            [document.getElementById("myBtn2"), document.getElementById("myModal2")],
+            [document.getElementById("myBtn3"), document.getElementById("myModal3")]
         ]);
 
         datamap.forEach((value, key) => {
@@ -454,7 +455,7 @@ for (i = 0; i < coll.length; i++) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.03<br />
+  		Version:1.04<br />
   		Last Update:06-26-2021<br />
 	<HR>
 </Footer>
