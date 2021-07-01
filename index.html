@@ -7,6 +7,11 @@
 	<meta name="description" 	content="Chris Brown | Quality Assurance"> <!---Web Searches--->
 	<Title>Chris Brown | SQL</Title>
 	 <link rel="stylesheet" href="modal.css">
+	var tag = document.getElementById('demo');
+var button = document.querySelector('button');
+button.addEventListener('click', function(){
+tag.classList.toggle('demo');
+});
 	
 <style>
 .collapsible {
@@ -244,7 +249,12 @@ body, html {
             color: white;
         }
 /*modal done*/
-  </style>
+	
+.demo {
+   display: none;
+}
+  
+</style>
 </head>
 
 
@@ -486,7 +496,8 @@ not completed: need to build basic update
     </script>
 </div>
 
- 
+<p id='demo' class='demo'>Hello Javascript</p>
+<button type='button'> click me </button>
 	
 	
 <script><!--- collapse script--->
@@ -507,36 +518,16 @@ for (i = 0; i < coll.length; i++) {
 </script>
 </DIV>
 
-<div id="1" class="message fade">
 
-  This is a message
 
-  <a href="#">Undo</a>
 
-</div>
-
- 
-
-<button type="button" data-toggle="message" data-target="#1">
-
-  Open message
-
-</button>
-
- 
-
-<button type="button" data-toggle="message" data-target="#1" data-expire="2000">
-
-  Open disappearing message
-
-</button>
 
   
   
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:2.0 (restore 1.19 d)<br />
+  		Version:2.1 (restore 1.19 d)<br />
   		Last Update:06-26-2021<br />
 	<HR>
 </Footer>
