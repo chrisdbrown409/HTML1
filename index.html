@@ -229,7 +229,7 @@ body, html {
         }
 
         .modal-header {
-             padding: 1% 1%;
+             padding: 2% 2%;
             background-color: #69341f;
             color: white;
         }
@@ -339,8 +339,7 @@ body, html {
 		<b>Scripts</b><br /> 
 		<br />
     		Script 1: <button id="myBtn3">Open Script 1</button></b><br />  	
-		<!--- Each button ID should have a corresponding ModalID below--->
-		
+		<!--- Each button ID should have a corresponding ModalID below--->	
 
 
 <!-- The Modal 1-->
@@ -358,26 +357,14 @@ body, html {
 Select * from table_name
   		</textarea>
 		</div>
-
 	
 	<div class="modal-footer">
- 		<button id="clipboardCopy"> Copy </button>
+                <!---<h3 style="font-size:14pt;">Button 1 Footer</h3>--->
+		    <button id="copy">Copy</button>
             </div>
-		
+        </div>
 
-		<script>	
-		// Type 2
-		document.getElementById('clipboardCopy').addEventListener('click', clipboardCopy);
-		async function clipboardCopy() {
-  		let text = document.querySelector("#Textarea1").value;
-  		await navigator.clipboard.writeText(text);
-		}
-		</script>
-		</div> <!---CONTENT CLOSE--->
-		</div> <!---MODAL CLOSE--->
-		</DIV>
-
-
+    </div>
 
     <!-- The Modal 2-->
     <div id="myModal2" class="modal">
@@ -395,26 +382,14 @@ Select * from table_name where variable_A
   		</textarea>
 		</div>
             <div class="modal-footer">
- 		<button id="clipboardCopy"> Copy </button>
-		</div>
-		   
+                <!---<h3 style="font-size:14pt;">Button 2 Footer</h3>--->
+		    <button id="copy">Copy</button>
+            </div>
+        </div>
 
-		
-		  <script>	
-		// Type 2
-		document.getElementById('clipboardCopy').addEventListener('click', clipboardCopy);
-		async function clipboardCopy() {
-  		let text = document.querySelector("#Textarea2").value;
-  		await navigator.clipboard.writeText(text);
-		}
-		</script>
-		</div>
-	    	</div> <!---CONTENT CLOSE--->
-		</div> <!---MODAL CLOSE--->
- 
-    
+    </div>
 
-    <!-- The Modal 3-->
+    <!-- The Modal -->
     <div id="myModal3" class="modal">
 
         <!-- Modal content 3-->
@@ -431,11 +406,10 @@ Select * from table_name where variable_A
 not complemted: need to build basic udate
   		</textarea>
 		</div>
-            
-	<div class="modal-footer">
+            <div class="modal-footer">
   		<button id="clipboardCopy"> Copy </button>
 		</div>
-
+		
 		
 		<script>	
 		// Type 2
@@ -445,11 +419,9 @@ not complemted: need to build basic udate
   		await navigator.clipboard.writeText(text);
 		}
 		</script>
-		</DIV>
-	    	</div> <!---CONTENT CLOSE--->
-		</div> <!---MODAL CLOSE--->
+    </div>
 
- 
+	    
 
 	    
     <script>
@@ -485,7 +457,6 @@ not complemted: need to build basic udate
     </script>
 </div>
 
-
  
 	
 	
@@ -507,13 +478,12 @@ for (i = 0; i < coll.length; i++) {
 </script>
 </DIV>
 
-
   
- 
+  
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.15O (v1.15 restore point)<br />
+  		Version:1.15<br />
   		Last Update:06-26-2021<br />
 	<HR>
 </Footer>
@@ -527,6 +497,5 @@ Page References:
 	3. https://pranadi.co.uk/wp-content/themes/yootheme/cache/Autumn-Visualisation-1b6a2048.jpeg
 	4. https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page
 Site References:
-
 	
   --->
