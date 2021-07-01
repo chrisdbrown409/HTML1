@@ -358,20 +358,24 @@ body, html {
 Select * from table_name
   		</textarea>
 		</div>
+
 	
 	<div class="modal-footer">
  		<button id="clipboardCopy"> Copy </button>
             </div>
+		
+		</div> <!---CONTENT CLOSE--->
+		</div> <!---MODAL CLOSE--->
 		<script>	
 		// Type 2
 		document.getElementById('clipboardCopy').addEventListener('click', clipboardCopy);
 		async function clipboardCopy() {
-  		let text = document.querySelector("#Textarea2").value;
+  		let text = document.querySelector("#Textarea1").value;
   		await navigator.clipboard.writeText(text);
 		}
 		</script>
-     		</div> <!---CONTENT CLOSE--->
-		</div> <!---MODAL CLOSE--->
+		</DIV>
+
 
 
     <!-- The Modal 2-->
@@ -392,6 +396,9 @@ Select * from table_name where variable_A
             <div class="modal-footer">
  		<button id="clipboardCopy"> Copy </button>
 		</div>
+		   
+		</div> <!---CONTENT CLOSE--->
+		</div> <!---MODAL CLOSE--->
 		
 		  <script>	
 		// Type 2
@@ -401,8 +408,8 @@ Select * from table_name where variable_A
   		await navigator.clipboard.writeText(text);
 		}
 		</script>
-     		</div> <!---CONTENT CLOSE--->
-		</div> <!---MODAL CLOSE--->
+		</div>
+ 
     
 
     <!-- The Modal 3-->
@@ -426,7 +433,8 @@ not complemted: need to build basic udate
 	<div class="modal-footer">
   		<button id="clipboardCopy"> Copy </button>
 		</div>
-		
+		</div> <!---CONTENT CLOSE--->
+		</div> <!---MODAL CLOSE--->
 		
 		<script>	
 		// Type 2
@@ -436,8 +444,8 @@ not complemted: need to build basic udate
   		await navigator.clipboard.writeText(text);
 		}
 		</script>
-     		</div> <!---CONTENT CLOSE--->
-		</div> <!---MODAL CLOSE--->
+		</DIV>
+
  
 
 	    
