@@ -361,10 +361,9 @@ Select * from table_name
 	<div class="modal-footer">
                 <!---<h3 style="font-size:14pt;">Button 1 Footer</h3>--->
 		    <!--- 15+ changed to below <button id="copy">Copy</button>--->
-		    <button id="clipboardCopy"> Copy </button>
+		    <button id="clipboardCopy1"> Copy </button>
             </div>
         </div>
-
     </div>
 
     <!-- The Modal 2-->
@@ -385,10 +384,9 @@ Select * from table_name where variable_A
             <div class="modal-footer">
                 <!---<h3 style="font-size:14pt;">Button 2 Footer</h3>--->
 		    <!--- 15+ changed to below <button id="copy">Copy</button>--->
-		    <button id="clipboardCopy"> Copy </button>
+		    <button id="clipboardCopy2"> Copy </button>
             </div>
         </div>
-
     </div>
 
     <!-- The Modal -->
@@ -409,14 +407,14 @@ not completed: need to build basic update
   		</textarea>
 		</div>
             <div class="modal-footer">
-  		<button id="clipboardCopy"> Copy </button>
+  		<button id="clipboardCopy3"> Copy </button>
 		
 		
 		
 		<script>	
 		// Type 2
-		document.getElementById('clipboardCopy').addEventListener('click', clipboardCopy);
-		async function clipboardCopy() {
+		document.getElementById('clipboardCopy3').addEventListener('click', clipboardCopy);
+		async function clipboardCopy3() {
   		let text = document.querySelector("#Textarea3").value;
   		await navigator.clipboard.writeText(text);
 		}
@@ -486,7 +484,7 @@ for (i = 0; i < coll.length; i++) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.16 (96ef)<br />
+  		Version:1.17 (96ef)<br />
   		Last Update:06-26-2021<br />
 	<HR>
 </Footer>
