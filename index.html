@@ -28,6 +28,40 @@
 .hero-image {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("https://images.unsplash.com/photo-1586970905459-f96e0da4a2b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=890&q=80");
  }
+	
+/** Redo: ADDED THIS ***/
+/*settings for larger screens*/
+@media only screen and (min-width: 601px){	
+.sidenav {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidenav a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;	
+
+/*settings for smaller screens*/
+@media screen and (max-width: 600px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidenav a {float: left;}
+  div.content {margin-left: 0;}
+}
+	
+/** Redo: stop ***/
+	
+
   </style>
 </head>
 	
