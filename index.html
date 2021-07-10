@@ -5,495 +5,150 @@
 	<meta charset="utf-8">
 	<meta name="viewport" 		content="width=device-width, initial-scale=1.0">
 	<meta name="description" 	content="Chris Brown | Quality Assurance"> <!---Web Searches--->
-	<Title>Chris Brown | SQL</Title>
-	 <link rel="stylesheet" href="modal.css">
-
+	<link rel="stylesheet" 		type="text/css" 	href="https:/MainPage/Style.CSS">
+	
+	<Title>Chris Brown | Software Methodologies</Title>
+	
+	<script>
+	setTimeout(function(){
+   	 document.getElementById('aap').className = 'hide';
+	}, 5000);
+	</script>
+	
 	
 <style>
 .collapsible {
- 	background-color: #c75528;
-	height: 10%; /*reactive*/
-	/*margin-left: 14%; controlled by main class*/
-  	color: white;
-  	cursor: pointer;
-  	/*padding: 18px; /*non-reactive*/
-	padding: 1%; /*reactive*/
-	width: 65%;
-  	border: none;
-  	text-align: Left;
-  	outline: none;
-  	font-size: 14px;
-	font-family: times,serif;
+ 	background-color: #5DADE2;
 }
 
 .active, .collapsible:hover {
-  background-color: #9e411c;
+  background-color: #478AB6 ;
 }
-
-.collapsible:after {
-  	content: '\002B'; /* Unicode character for "plus" sign (+) */
-  	/*margin-left: 14%; controlled by main class*/
-	color: white;
-  	font-weight: bold;
-  	float: Right;
-  	margin-left: 5px;
-  	font-size: 14px;
-	font-family: times,serif;
-}
-
-.active:after {
-  content: "\2212"; /* Unicode character for "minus" sign (-) */
-}
-
-.content {
-  	padding: 0 18px;
-	width: 80%; 
-  	/*margin-left: 14%; controlled by main class*/
- 	max-height: 0;
-  	overflow: hidden;
-  	transition: max-height 0.2s ease-out;
-  	background-color: #F8F9F9;
-  	font-size: 12px;
-	font-family: times,serif;
-}
-  
-  
-body, html {
-  	height: 100%;
-  	margin: 0;
-  	font-family: times,serif;
-    }
 
 .hero-image {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("https://pranadi.co.uk/wp-content/themes/yootheme/cache/Autumn-Visualisation-1b6a2048.jpeg");
-	height: 30%;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	position: relative;
-	max-width:100%; /*responsive design*/
-	/*height:auto; responsive design*/
-}
-
-.hero-text {
-  	font-family: times,serif;
-  	text-align: center;
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-  	color: white;
-}
-
-
-  body {
-   font-family: times,serif;
-}
-
-.sidenav {
-	height: 100%;
-	text-align: Left;
-  	position: absolute; /*will hold sidenav in place*/
- 	 z-index: 1;
-  	width: 12%; /*repsonsive:*15*/
-	top: 32%;
-	left: 1%;
-	/*width: 130px;*/
-	/*top: 220px;*
-  	/*left: 10px;*/
-  	background: White;
-  	overflow-x: hidden;
-  	padding: 0px 0;
-	font-family: times,serif;
-	/*font-family: Arial, sans-serif;*/
-	font-size: 12px;
-}
-
-.sidenav a {
-  	/*padding: 0px 8px 6px 16px; /*top,right,bottom, left */
-	padding: 0% 0% .5% 1.0%; /*top,right,bottom, left */
- 	text-decoration: none;
-	text-align: Left;
-	font-family: times,serif;
-  	font-size: 12px;
-  	color: #2196F3;
-  	display: block;
-}
-
-.sidenav a:hover {
-  	color: #064579;
-}
-
-
-.main {
-  	/*margin-left: 140px; /* Same width as the sidebar + left position in px */
-	padding: 0px 10px;
-	font-style:normal;
-	/*margin-left: 40px;*/
-	margin-left: 17%; /* Same width as the sidebar + left position in px */ /*reponsive*/
-	font-family: times,serif;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 220px;}
-  .sidenav a {font-size: 12px;}
-}
- footer {
-	/*position: Fixed; this makes it sticky always at the bottom of the page*/
-	/*margin-left: 40px;*/
-	/*margin-left: 17%; controlled by main class*/
-	width: 100%;
-	padding: 0px 0px 10px 0px; /*top,right,bottom, left */
-	left: 0;
-	bottom: 0;
-	background-color: White;
-	color: blank;
-	text-align: left;
-  	font-size:8pt;
-  	font-style:normal;
-	font-family: times,serif;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("https://images.unsplash.com/photo-1586970905459-f96e0da4a2b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=890&q=80");
  }
-	
-	
-/*start modal8*/
-     /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 17%; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            /*background-color: rgb(0, 0, 0); /* Fallback color */
-            /*background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-            overflow: auto;
-        }
-
-        /* Modal Content */
-        .modal-content {
-            max-height: 50%;
-            overflow: auto;
-            position: relative;
-            background-color: white;
-            margin: auto;
-            padding: 0;
-            border: 3% solid #888;
-            width: 50%; /*content window size */
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            -webkit-animation-name: animatetop;
-            -webkit-animation-duration: 0.4s;
-            animation-name: animatetop;
-            animation-duration: 0.4s
-        }
-
-        /* Add Animation */
-        @-webkit-keyframes animatetop {
-            from {
-                top: -60%;
-                opacity: 0
-            }
-
-            to {
-                top: 0;
-                opacity: 1
-            }
-        }
-
-        @keyframes animatetop {
-            from {
-                top: -60%;
-                opacity: 0
-            }
-
-            to {
-                top: 0;
-                opacity: 1
-            }
-        }
-
-        /* The Close Button */
-        .close {
-            color: white;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .modal-header {
-             padding: 2% 2%;
-            background-color: #69341f;
-            color: white;
-        }
-
-        .modal-body {
-            padding: 2% 2%;
-        }
-
-        .modal-footer {
-            padding: 2% 2%;
-            background-color: #69341f;
-            color: white;
-        }
-/*modal done*/
-	
-.demo {
-   display: none;
-}
-  
-</style>
+  </style>
 </head>
-
-
 	
 <body>
-
 <div class="hero-image">
   <div class="hero-text">
-    <h3 style="font-size:25px">SQL</h3>
-    <!---
-    <button>Hire me</button>
-    --->
-  </div>
+    Software Methodologies- HTML TEST SITE
+   </div>
 </div>
 <HR>
 
   <div class="sidenav">
-	<p style="font-size:12pt;"><U>Links</U></p>
-    	<a href="https://chrisdbrown409.github.io/MainPage/">Home</a><br />
-    	<a href="https://github.com/chrisdbrown409" >Github Root</a><br />
-    	<a href="https://github.com/chrisdbrown409/MainSQL/edit/main/index.html" >Github Repository</a><br />
-    	<a href = mailto:chrisdbrown409@gmail.com>Email Author</a><br />
-    	<a href="https://www.linkedin.com/in/chrisbrown72/">Author's Profile</a><br />
+		<br />
+		<U>Links</U><br />
+		<br />
+    		<a href="https://chrisdbrown409.github.io/MainPage/">Home</a><br />
+    		<a href="https://github.com/chrisdbrown409">Github Root</a><br />
+    		<a href="https://github.com/chrisdbrown409/HTML1/edit/main/index.html" >Github Repository</a><br />
+    		<a href="mailto:chrisdbrown409@gmail.com?subject=Website Email!&body=Chris,">Email Author</a><br />
+    		<a href="https://www.linkedin.com/in/chrisbrown72/">Author's Profile</a><br />
 	</div>
- 
-  
-  
-
 
 
 <div class="main">
 	<div>
-		<h2 style="font-size:14pt;">SQL</h2>
-		Structured Query Language,<em> or SQL</em>, is one of the most common tools used when using databases. SQL is a powerful tool that can be used to accomplish many tasks such as querying data or creating test data. SQL has many usages when reviewing or testing databases. There is a significant amount of information on the web regarding SQL. Only a few topics will be covered. <br />
+		<h2>Software Methodologies</h2>
+		<p>The methodology of the development team determines how the team will develop and deliver code.<br />
 		<br />
-		Each section expands and explores the topics within the section.<br />
+		Generally, all teams within an organization use the same methodology, however, in some instances the team must choose 
+		the methodology that will work best for the project. All methodologies have different strengths and weaknesses and 
+		exist for different reasons. <br />
+		<br />
+		When deciding upon a methology, it is best to be flexible so that the methology does not impact that task. 
+		Many times a hybrid solution is used for different phases of the delivery cycle.<br />
+		<br />
+		Each section expands and explores the topics within the section.
 		</p>
 	</div>
 	
+<div class="aside">
+	<div class="Show"> <!---added for show class--->
+		<show id="aap">You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.<br />
+		<br />
+		<b>~ Walt Disney</b> <!--- </show> removed--->
+		</div> 	<!---added for show class--->
+	</div>
+	
 <!---start buttons--->  
-<button class="collapsible">Information</button>
+<button class="collapsible">Waterfall</button>
 	<div class="content">
 		<br />
-		<b>This section contains general information about SQL.</b><br />
-    		<br />
-		Wikipedia: <a href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a><br />
-		</p>
-    	</div>
+		This section contains general information about this methodology.
+		<blockquote>
+		Wikipedia: <a href="https://en.wikipedia.org/wiki/Waterfall_model" target="_blank">Waterfall Methodology</a><br /><br />
+      		</blockquote>
+		Many consider the waterfall method to be the most traditional software development method. The waterfall method is a rigid 
+		linear model that consists of sequential phases focusing on distinct goals:<br />
+		<blockquote>
+		* Requirements<br />
+		* Design<br />
+		* Implementation<br />
+		* Verification<br />
+		* Maintenance<br />
+		</blockquote>
+		Each phase must be 100% complete before the next phase can start. There’s usually no process for going 
+		back to modify the project or direction.<br />
+		<br />
+	</div>
 	
-<button class="collapsible">Syntax</button>
+<button class="collapsible">Agile</button>
 	<div class="content">
 		<br />
-		<b>This section contains general information about the syntax of SQL. Here a few helpful links.</b><br />
-    		<br />
-		Site: <a href="https://en.wikipedia.org/wiki/SQL_syntax" target="_blank">Wikipedia Syntax Guide</a>   <br />
-		<br />
-		Site: <a href="https://www.w3schools.com/sql/sql_syntax.asp" target="_blank">W3 Syntax Guide</a><br />
-		</p>
+		This section contains general information about this methodology.
+    		<blockquote>
+		Wikipedia: <a href="https://en.wikipedia.org/wiki/Agile_software_development" target="_blank">Agile Methodology</a><br /><br />
+		</blockquote>
+		Teams use the agile development methodology to minimize risk (such as bugs, cost overruns, and changing requirements) when 
+		adding new functionality. In all agile methods, teams develop the software in iterations that contain mini-increments of the 
+		new functionality. There are many different forms of the agile development method:<br />
+		<blockquote>
+		* Scrum<br />
+		* Crystal<br />
+		* Extreme Programming (XP)<br />
+		* Feature-Driven Development (FDD)<br />
+		</blockquote>
     	</div>
-
-<button class="collapsible">Courses</button>
+ 
+<button class="collapsible">DevOps Deployment </button>
 	<div class="content">
 		<br />
-		<b>This section list some coures and turtorials for SQL.</b><br /> 
-		<br />
-		Course 1: <a href="https://www.w3schools.com/sql/" target="_blank">W3 Course</a><br />
-      		</p>
-    	</div>
-
-<button class="collapsible">Tricks</button>
-	<div class="content">
-		<br />
-		<b>This section contains some tricks and tips for useful functionality.</b><br /> 
-		<br />
-		Importing from Excel: <a href="https://stackoverflow.com/questions/39610133/how-to-import-an-excel-file-into-sql-server" target="_blank">Import from Excel</a><br />
-		</p>
-    	</div>
-
-
-<button class="collapsible">Examples</button>
-	<div class="content">
-		<br />
-		<b>This section lists common queries and scripts for SQL.</b><br /> 
-		<br />
-		<b>Queries</b><br />
-		<br />
-		Query 1: <button id="myBtn1">Open Query 1</button></b><br /> 
-		<br />
-   		Query 2: <button id="myBtn2">Open Query 2</button></b><br /> 
+		This section contains general information about this methodology.
 		<br /> 
-		<br /> 
-		<b>Scripts</b><br /> 
+    		<blockquote>
+		Wikipedia: <a href="https://en.wikipedia.org/wiki/DevOps" target="_blank">Dev Ops Deployment</a><br /><br />
+		</blockquote>
+		DevOps is not just a development methodology but also a set of practices that supports an organizational culture. DevOps deployment centers on 
+		organizational change that enhances collaboration between the departments responsible for different segments of the development life cycle, 
+		such as development, quality assurance, and operations.<br />
 		<br />
-    		Script 1: <button id="myBtn3">Open Script 1</button></b><br />  	
-		<!--- Each button ID should have a corresponding ModalID below--->	
-
-
-<!-- The Modal 1-->
-    <div id="myModal1" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
-                <h2 style="font-size:14pt;">Query 1: Basic Select Statement</h2>
-		<p><em>The following contents can be copied and can be pasted</em><p>
-            </div>
-            <div class="modal-body">
-                <textarea id="Textarea1" name="Textarea1" type="text" rows="6" cols="75">
-Select * from table_name
-  		</textarea>
-		</div>
+   	</div>
 	
-	<div class="modal-footer">
-                <!---<h3 style="font-size:14pt;">Button 1 Footer</h3>--->
-		    <!--- 15+ changed to below <button id="copy">Copy</button>--->
-		    <button id="clipboardCopy1"> Copy </button>
-		
-		<script>	
-		// Type 2
-		document.getElementById('clipboardCopy1').addEventListener('click', clipboardCopy1);
-		async function clipboardCopy1() {
-  		let text = document.querySelector("#Textarea1").value;
-  		await navigator.clipboard.writeText(text);
-		}
-		</script> <!---moved in 19.c--->
-		
-            </div>
-        </div>
-    </div>
-
-    <!-- The Modal 2-->
-    <div id="myModal2" class="modal">
-
-        <!-- Modal content -->
-           <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
-                <h2 style="font-size:14pt;">Query 2: Basic Select Statement with where clause</h2>
-		<p><em>The following contents can be copied and can be pasted</em><p>
-            </div>
-            <div class="modal-body">
-                <textarea id="Textarea2" name="Textarea2" type="text" rows="6" cols="75">
-Select * from table_name where variable_A
-  		</textarea>
-		</div>
-            <div class="modal-footer">
-                <!---<h3 style="font-size:14pt;">Button 2 Footer</h3>--->
-		    <!--- 15+ changed to below <button id="copy">Copy</button>--->
-		    <button id="clipboardCopy2"> Copy </button>
-           
-		<script>	
-		// Type 2
-		document.getElementById('clipboardCopy2').addEventListener('click', clipboardCopy2);
-		async function clipboardCopy2() {
-  		let text = document.querySelector("#Textarea2").value;
-  		await navigator.clipboard.writeText(text);
-		}
-		</script>
-    </div>
-</div> <!--- 15.1 + moved from under button--->	
-</div> 	<!--- 1.19 b  + moved from under button had to add this after added the button--->	   
-		   
-		   
-		   
-		  <!--- </div>
-        </div>
-    </div> --->
+<button class="collapsible">Rapid Application Development (RAD)</button>
+	<div class="content">
+		<br />
+		This section contains general information about this methodology.
+		<blockquote>
+		Wikipedia: <a href="https://en.wikipedia.org/wiki/Rapid_application_development" target="_blank">Rapid Application Development</a><br /><br />
+  		</blockquote>
+		Rapid application development (RAD) is a condensed development process that produces a high-quality system with low investment costs. 
+		The ability to quickly adjust is what allows such a low investment cost. The rapid application development method contains four phases:<br /> 
+		<blockquote>
+		* Requirements Planning<br />
+		* User Design<br />
+		* Construction<br />
+		* Cutover<br />
+		</blockquote>
+		The user design and construction phases repeat until the user confirms that the product meets all requirements.<br />
+		<br />
+    	</div>
 
 
-
-
-    <!-- The Modal -->
-    <div id="myModal3" class="modal">
-
-        <!-- Modal content 3-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
-                <h2 style="font-size:14pt;">Script 1: Basic Update Script</h2>
-		    <p><em>The following contents can be copied and can be pasted</em><p>
-            </div>
-	 
-            
-	<div class="modal-body">
-		<textarea id="Textarea3" name="Textarea3" type="text" rows="6" cols="75">
-not completed: need to build basic update
-  		</textarea>
-		</div>
-            <div class="modal-footer">
-  		<button id="clipboardCopy3"> Copy </button>
-		
-		
-		
-		<script>	
-		// Type 2
-		document.getElementById('clipboardCopy3').addEventListener('click', clipboardCopy3);
-		async function clipboardCopy3() {
-  		let text = document.querySelector("#Textarea3").value;
-  		await navigator.clipboard.writeText(text);
-		}
-		</script>
-    </div>
-</div> <!--- 15.1 + moved from under button--->	
-
-	    
-
-	    
-    <script>
-        var datamap = new Map([
-            [document.getElementById("myBtn1"), document.getElementById("myModal1")],
-            [document.getElementById("myBtn2"), document.getElementById("myModal2")],
-            [document.getElementById("myBtn3"), document.getElementById("myModal3")]
-        ]);
-
-        datamap.forEach((value, key) => {
-            doModal(key, value);
-        });
-
-        function doModal(anchor, popupbox) {
-
-            // Get the <span> element that closes the modal
-            var span = popupbox.getElementsByClassName("close")[0];
-
-            anchor.addEventListener("click", function (event) {
-                popupbox.style.display = "block";
-            });
-
-            span.addEventListener("click", function (event) {
-                popupbox.style.display = "none";
-            });
-
-            window.addEventListener("click", function (event) {
-                if (event.target == popupbox) {
-                    popupbox.style.display = "none";
-                }
-            });
-        }
-    </script>
-</div>
-
-
-	
 	
 <script><!--- collapse script--->
 var coll = document.getElementsByClassName("collapsible");
@@ -511,38 +166,35 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-</DIV>
-
-<p id='demo' class='demo'>Hello Javascript</p>
-<button type='button'> click me </button>
-
-<script>
-var tag = document.getElementById('demo');
-var button = document.querySelector('button');
-button.addEventListener('click', function(){
-tag.classList.toggle('demo');
-});
-</script>
-
 
   
   
 <Footer>
+</Footer>
+<div class="footer">
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:2.2 (restore 1.19 d)<br />
-  		Last Update:06-26-2021<br />
+  		Version:1.00<br />
+		CSS Applied: <b>Yes</b><br />
+  		Last Update:07-10-2021<br />
 	<HR>
-</Footer>
+	</div>
+
+
+<!--- added footer mobile with just version number--->
+<div class="footerMobile"> <!---mobile screens--->
+		<HR>  
+   		<input type="button" onclick="window.location.href='https://chrisdbrown409.github.io/MainPage/';" value="Home" />&#160;|&#160;
+		<button onclick= "document.location =  'mailto:chrisdbrown409@gmail.com'"">Email</button>&#160;|&#160;
+		<b>Repository:</b>Version:1.00<br />
+		<HR>  
+	</div>	
+
 </body>
 </html>
    
   <!---
 Page References:  
-	1. https://chrisdbrown409.github.io/MainSQL/
-	2. hero image: https://unsplash.com/photos/8ZAxI5FwjFo
-	3. https://pranadi.co.uk/wp-content/themes/yootheme/cache/Autumn-Visualisation-1b6a2048.jpeg
-	4. https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page
-Site References:
-	
+	1. https://github.com/chrisdbrown409/HTML1/edit/main/index.html
+	2. REF: https://www.synopsys.com/blogs/software-security/top-4-software-development-methodologies/
   --->
